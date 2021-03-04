@@ -1,0 +1,129 @@
+<html>
+<title>Corona Stats</title>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url('https://i.pinimg.com/originals/53/bb/8c/53bb8c78a6f2d7ed2a24d8c44b511e4b.gif');">
+<!--<h3><a href="/about">About</a></h3>-->
+<!--<h3><a href="/contact">Contact</a></h3>-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="#"><img width="40" class="navbar-brand"  src="https://img.icons8.com/nolan/2x/coronavirus.png"/></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" align="right">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://disease.sh/" target="_blank">Disease.sh <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+
+<br/>\<br/>
+<h1 align="center"><b>Corona Statistics</b></h1>
+<br/><br/>
+
+<!--<h2>Total Cases : <%= totalCases %></h2>-->
+<!--<h2>Total Recovered : <%= recovered %></h2>-->
+<!--<h2>Today Cases : <%= todayCases %></h2>-->
+<!--<h2>Today Recovered : <%= todayRecovered %></h2>-->
+<!--<h2>Total Deaths : <%= totalDeaths %></h2>-->
+<!--<h2>Today Deaths : <%= todayDeaths %></h2>-->
+
+<table class="table" border="1" align="center" style="width:70%;text-align: center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Total Cases</th>
+      <th scope="col">Total Recovered</th>
+      <th scope="col">Today Case</th>
+      <th scope="col">Today Recovered</th>
+      <th scope="col">Total Deaths</th>
+      <th scope="col">Today Deaths</th>
+      <th scope="col">Active Cases</th>
+      <th scope="col">Critical Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= totalCases %></td>
+      <td><%= recovered %></td>
+      <td><%= todayCases %></td>
+      <td><%= todayRecovered %></td>
+      <td><%= totalDeaths %></td>
+      <td><%= todayDeaths %></td>
+      <td><%= active %></td>
+      <td><%= critical %></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<div class="card-group" style="padding: 20px;width:70%; margin:0 auto;" align="center">
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Total Cases</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= totalCases %></h5>
+  </div>
+</div>&nbsp;&nbsp;
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Total Recovered</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= recovered %></h5>
+  </div>
+</div>&nbsp;&nbsp;
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Today Case</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= todayCases %></h5>
+  </div>
+</div>&nbsp;&nbsp;
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Today Recovered</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= todayRecovered %></h5>
+  </div>
+</div>
+</div>
+
+<div class="card-group" style="padding: 20px;width:70%; margin:0 auto;" align="center">
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Total Deaths</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= totalDeaths %></h5>
+  </div>
+</div>&nbsp;&nbsp;
+
+<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Today Deaths</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= todayDeaths %></h5>
+  </div>
+</div>&nbsp;&nbsp;
+<div class="card bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Active Cases</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= active %></h5>
+  </div>
+</div>&nbsp;&nbsp;
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Critical Cases</div>
+  <div class="card-body">
+    <h5 class="card-title"><%= critical %></h5>
+  </div>
+</div>
+</div>
+
+<!--<img src="https://i.pinimg.com/originals/53/bb/8c/53bb8c78a6f2d7ed2a24d8c44b511e4b.gif" class="img-fluid" alt="Responsive image">-->
+
+
+</body>
+</html>
+
